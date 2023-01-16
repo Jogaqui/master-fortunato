@@ -35,10 +35,10 @@ return new class extends Migration
             $table->integer('estado');
         });
         Schema::create('comidas', function (Blueprint $table) {
-            $table->id('idComida');
+            $table->id('idcomida');
             $table->string('nombreComida');
             $table->float('precio');
-            $table->integer('idCategoria');
+            $table->integer('idcategoria');
             $table->integer('estado');
         });
         Schema::create('detalles_comanda', function (Blueprint $table) {
@@ -49,7 +49,7 @@ return new class extends Migration
             $table->integer('estado');
         });
         Schema::create('mesas', function (Blueprint $table) {
-            $table->id('idMesa');
+            $table->id('idmesa');
             $table->string('ubicacion');
             $table->integer('capacidad');
             $table->integer('estado');

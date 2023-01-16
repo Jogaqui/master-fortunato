@@ -14,11 +14,11 @@ class Comida extends Model
     protected $fillable = [
         'nombreComida',
         'precio',
-        'idCategoria',
+        'idcategoria',
         'estado'
     ];
     public function categoria() {
-        return $this->hasOne(Categoria::class,'idCategoria','idCategoria');
+        return $this->hasOne(Categoria::class,'idcategoria','idcategoria');
     }
 
     public function detalle() {
