@@ -9,7 +9,7 @@ class Comanda extends Model
 {
     use HasFactory;
     protected $table = 'comandas';
-    protected $primaryKey = 'idComanda';
+    protected $primaryKey = 'idcomanda';
     public $timestamps = false;
     protected $fillable = [
         'idcliente',

@@ -5,12 +5,12 @@
     <h5>Editar Comida</h5>
 </div>
 <div class="card-body table-border-style">
-    <form method="POST" action="{{route('comanda.update',$comanda->idComanda)}}">
+    <form method="POST" action="{{route('comanda.update',$comanda->idcomanda)}}">
         @method('put')
         @csrf
         <div class="mb-3">
             <label for="id" class="form-label">ID:</label>
-            <input type="text" class="form-control" id="id" name="id" value="{{$comanda->idComanda}}" disabled>
+            <input type="text" class="form-control" id="id" name="id" value="{{$comanda->idcomanda}}" disabled>
         </div>
         <div class="mb-3">
             <label for="idcliente" class="form-label">Cliente:</label>
