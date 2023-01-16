@@ -16,7 +16,7 @@
             </select>
         </div>
         <div class="mb-3">
-            <label for="idMsesa" class="form-label">Mesa:</label>
+            <label for="idMesa" class="form-label">Mesa:</label>
             <select class="form-control" name="idMesa" id="idMesa">
                 @foreach($mesa as $item)
                 <option value="{{$item['idMesa']}}">{{$item['ubicacion']}}</option>
