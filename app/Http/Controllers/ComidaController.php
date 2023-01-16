@@ -59,7 +59,7 @@ class ComidaController extends Controller
         $comida = new Comida();
         $comida->nombreComida = $request->nombreComida;
         $comida->precio = $request->precio;
-        $comida->idcategoria = $request->idcategoria;
+        $comida->idCategoria = $request->idcategoria;
         $comida->estado = '1';
         $comida->save();
         return redirect()->route('comida.index')->with('datos','¡Registro guardado!');
