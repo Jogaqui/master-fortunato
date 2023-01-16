@@ -20,7 +20,7 @@ class ComandaController extends Controller
     public function index(Request $request)
     {
         $buscarpor = $request->get('buscarpor');
-        $comanda = Comanda::where('estado','=','1')->where('idCliente','like','%'.$buscarpor.'%')->paginate($this::PAG);
+        $comanda = Comanda::where('estado','=','1')->where('idcliente','like','%'.$buscarpor.'%')->paginate($this::PAG);
         return view('comanda.index',compact('comanda','buscarpor'));
     }
 
