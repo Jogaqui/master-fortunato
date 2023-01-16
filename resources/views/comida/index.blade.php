@@ -28,8 +28,8 @@
                         <td>{{$item->precio}}</td>
                         <td>{{$item->categoria->descripcion}}</td>
                         <td>
-                            <a href="{{route('comida.edit',$item->idComida)}}" class="btn btn-info btn-sm"><i class="fas fa-edit"></i>Editar</a>
-                            <a href="{{route('comida.confirmar',$item->idComida)}}" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i>Eliminar</a>
+                            <a href="{{route('comida.edit',$item->idcomida)}}" class="btn btn-info btn-sm"><i class="fas fa-edit"></i>Editar</a>
+                            <a href="{{route('comida.confirmar',$item->idcomida)}}" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i>Eliminar</a>
                         </td>
                     </tr>
                     @endforeach
