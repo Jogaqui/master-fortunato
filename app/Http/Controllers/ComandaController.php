@@ -72,7 +72,7 @@ class ComandaController extends Controller
         ]);
         $comanda = new Comanda();
         $comanda->idcliente = $request->idcliente;
-        $comanda->idMesa = $request->idMesa;
+        $comanda->idmesa = $request->idmesa;
         $comanda->id = $request->id;
         $comanda->fecha = $request->fecha;
         $comanda->estado = '1';

@@ -16,10 +16,10 @@
             </select>
         </div>
         <div class="mb-3">
-            <label for="idMesa" class="form-label">Mesa:</label>
-            <select class="form-control" name="idMesa" id="idMesa">
+            <label for="idmesa" class="form-label">Mesa:</label>
+            <select class="form-control" name="idmesa" id="idmesa">
                 @foreach($mesa as $item)
-                <option value="{{$item['idMesa']}}">{{$item['ubicacion']}}</option>
+                <option value="{{$item['idmesa']}}">{{$item['ubicacion']}}</option>
                 @endforeach
             </select>
         </div>
