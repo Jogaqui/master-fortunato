@@ -18,16 +18,17 @@
         <div class="mb-3">
             <label for="id" class="form-label">Categorias: </label>
             <select class="form-control" name="id" id="select-project">
-                <option value="">Seleccione categoria</option>
                 @foreach($categoria as $item)
                 <option value="{{$item['idcategoria']}}">{{$item['descripcion']}}</option>
                 @endforeach
             </select>
         </div>
         <div class="mb-3">
-            <label for="idcomida" class="form-label">Comida</label>
+            <label for="idcomida" class="form-label">Comidas:</label>
             <select class="form-control" name="idcomida" id="idcomida" >
-                <option value="">Seleccione producto</option>
+                @foreach($comida as $item)
+                <option value="{{$item['idcomida']}}">{{$item['nombreComida']}}</option>
+                @endforeach
             </select>
         </div>
 
