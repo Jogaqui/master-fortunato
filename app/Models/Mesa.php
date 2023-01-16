@@ -9,7 +9,7 @@ class Mesa extends Model
 {
     use HasFactory;
     protected $table = 'mesas';
-    protected $primaryKey = 'idMesa';
+    protected $primaryKey = 'idmesa';
     public $timestamps = false;
     protected $fillable = [
         'ubicacion',

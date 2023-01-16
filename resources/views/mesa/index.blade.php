@@ -22,12 +22,12 @@
                     @else
                     @foreach($mesa as $item)
                     <tr>
-                        <td>{{$item->idMesa}}</td>
+                        <td>{{$item->idmesa}}</td>
                         <td>{{$item->ubicacion}}</td>
                         <td>{{$item->capacidad}}</td>
                         <td>
-                            <a href="{{route('mesa.edit',$item->idMesa)}}" class="btn btn-info btn-sm"><i class="fas fa-edit"></i>Editar</a>
-                            <a href="{{route('mesa.confirmar',$item->idMesa)}}" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i>Eliminar</a>
+                            <a href="{{route('mesa.edit',$item->idmesa)}}" class="btn btn-info btn-sm"><i class="fas fa-edit"></i>Editar</a>
+                            <a href="{{route('mesa.confirmar',$item->idmesa)}}" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i>Eliminar</a>
                         </td>
                     </tr>
                     @endforeach
